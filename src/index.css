@@ -52,6 +52,12 @@ body{
     object-fit: cover;
 }
 
+@media(max-width: 450px){
+    .img-carrusel{
+        height: 500px;
+    }
+}
+
 /*NOSOTROS*/
 
 .center-image {
