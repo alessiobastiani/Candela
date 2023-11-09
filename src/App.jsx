@@ -4,7 +4,7 @@ import Home from "./components/Home"
 import Nosotros from "./components/Features"
 import Testimonio from "./components/Testimonio"
 import Departamentos from './components/Departamentos'
-
+import Servicios from './components/Servicios'
 
 function App() {
 
@@ -15,6 +15,7 @@ function App() {
         <Nosotros/>
         <Testimonio/>
         <Departamentos/>
+        <Servicios/>
     </div>
   )
 }
