@@ -2,7 +2,6 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import imgUno from '../assets/img.jpg'
 import imgDos from '../assets/img2.jpg'
-
 const Carrusel = () => {
   return (
     <Carousel>

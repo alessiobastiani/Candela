@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/logo.png';
+import logo2 from '../assets/logo2.png';
 import { Container } from 'react-bootstrap';
 
 const NavHome = () => {
@@ -9,7 +9,7 @@ const NavHome = () => {
         <Navbar expand="lg" className="navegador">
             <Container>
                 <Navbar.Brand className="d-lg-none">
-                        <img src={logo} alt="" className='logo'/>
+                        <img src={logo2} alt="" className='logo'/>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -18,7 +18,7 @@ const NavHome = () => {
                         <Nav className='nav-link'>DEPARTAMENTOS</Nav>
                     </Nav>
                     <Navbar.Brand className='d-none d-lg-block'>
-                            <img src={logo} alt="" className='logo'/>
+                            <img src={logo2} alt="" className='logo'/>
                     </Navbar.Brand>
                     <Nav className='ms-auto '>
                         <Nav.Link href="#link">SERVICIOS</Nav.Link>
