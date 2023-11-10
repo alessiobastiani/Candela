@@ -4,7 +4,7 @@ import Derechos from './Derechos'
 
 const Footer = () => {
   const handleWhatsAppButtonClick = () => {
-    const phoneNumber = '5491133833397'; // Reemplaza con tu número de WhatsApp
+    const phoneNumber = '5491131200490'; // Reemplaza con tu número de WhatsApp
     const message = 'Hola, estoy interesado en departamentos La Candela.';
     const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
     
@@ -60,7 +60,7 @@ const Footer = () => {
             <img src={logo2} alt="" />
         </div>
         <div className='direc'>
-            <p>Tel: 54 9 11 3383-3397</p>
+            <p>Tel: 54 91131200490</p>
             <p>Direccion: Buenos aires</p>
         </div>
     </div>
