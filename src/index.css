@@ -195,6 +195,12 @@ body{
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
+}
+
+.logo-l{
+  width:300px;
+  height:300px;
 }
 
 .scanner span {
