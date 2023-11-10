@@ -11,7 +11,7 @@ export default function Example() {
           <figure className="mt-10">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
               <p>
-                “La experiencia de dirigir nuestro complejo de departamentos en la hermosa costa de Buenos Aires ha sido verdaderamente excepcional. Desde el primer día, nos hemos comprometido a proporcionar a nuestros huéspedes un lugar de descanso y tranquilidad.”
+                “La experiencia de dirigir nuestro complejo de departamentos en la hermosa costa de San Clemente del Tuyu ha sido verdaderamente excepcional. Desde el primer día, nos hemos comprometido a proporcionar a nuestros huéspedes un lugar de descanso y tranquilidad.”
               </p>
             </blockquote>
             <figcaption className="mt-10">

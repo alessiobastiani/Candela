@@ -36,11 +36,11 @@ const callouts = [
   
   export default function Example() {
     return (
-      <div className="bg-gray-100">
+      <div id='DEPARTAMENTOS' className="bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
             <h2 className="text-2xl font-bold text-gray-900">Nuestros Departamentos</h2>
-            <p>Disponemos de dos amplios dúplex, diseñados para alojar hasta seis personas, lo que los convierte en la elección perfecta para familias numerosas o grupos de amigos que desean compartir su estadía en la costa de Buenos Aires. Además, contamos con cuatro departamentos ideales para grupos más pequeños, con capacidad para hasta cuatro personas.</p>
+            <p>Disponemos de dos amplios dúplex, diseñados para alojar hasta seis personas, lo que los convierte en la elección perfecta para familias numerosas o grupos de amigos que desean compartir su estadía en <b> San Clemente del Tuyu.</b> Además, contamos con cuatro departamentos ideales para grupos más pequeños, con capacidad para hasta cuatro personas.</p>
             <p>Ya sea que estés buscando un alojamiento espacioso para una escapada familiar o un acogedor rincón para una escapada en pareja, tenemos la opción perfecta para ti en nuestro complejo.</p>
             <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (

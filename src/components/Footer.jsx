@@ -1,14 +1,28 @@
 import React from 'react'
 import logo2 from '../assets/logo2.png'
+import Derechos from './Derechos'
 
 const Footer = () => {
+  const handleWhatsAppButtonClick = () => {
+    const phoneNumber = '5491133833397'; // Reemplaza con tu número de WhatsApp
+    const message = 'Hola, estoy interesado en departamentos La Candela.';
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+    
+    window.location.href = whatsappLink;
+  };
+  const handleHotmailButtonClick = () => {
+    const email = 'llanosconstrucciones@hotmail.com';
+    window.location.href = `mailto:${email}`;
+  };
+  
   return (
     <div className='seccion-footer'>
 
     <div className='contenedor-footer d-flex'>
     <div className='redes'>
-        <button className="cssbuttons-io-button">
-      Whastapp
+        <button onClick={handleWhatsAppButtonClick} className="cssbuttons-io-button">
+          
+        Whastapp
             <div className="icon">
         <svg
           height="24"
@@ -24,12 +38,12 @@ const Footer = () => {
         </svg>
                 </div>
             </button>
-            <button className="cssbuttons-io-button">
+            <button onClick={handleHotmailButtonClick} className="cssbuttons-io-button" >
       Hotmail
       <div className="icon">
         <svg
           height="24"
-          width="24"
+          width="20"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
           >
@@ -46,11 +60,12 @@ const Footer = () => {
             <img src={logo2} alt="" />
         </div>
         <div className='direc'>
-            <p>Email: llanosconstrucciones@hotmail.com</p>
+            <p>Tel: 54 9 11 3383-3397</p>
             <p>Direccion: Buenos aires</p>
         </div>
     </div>
-            </div>
+        <Derechos/>
+    </div>
   )
 }
 

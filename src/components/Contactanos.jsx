@@ -7,8 +7,12 @@ import casa6 from '../assets/casa6.jpeg'
 import lacandela from '../assets/lacandela.jpeg'
 
 export default function Example() {
+  const phoneNumber = '5491133833397'; // Reemplaza con tu número de WhatsApp
+  const message = 'Hola, estoy interesado en departamentos La Candela.';
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
     return (
-      <div className="relative overflow-hidden bg-white">
+      <div id='CONTACTO' className="relative overflow-hidden bg-white">
         <div className="pb-80 pt-16 sm:pb-40 sm:pt-24 lg:pb-48 lg:pt-40">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
@@ -86,9 +90,8 @@ export default function Example() {
                     </div>
                   </div>
                 </div>
-  
                 <a
-                  href="#"
+                  href={whatsappLink}
                   className="inline-block rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-center font-medium text-white hover:bg-indigo-700"
                 >
                   Escribinos

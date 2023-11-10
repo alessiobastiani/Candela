@@ -14,15 +14,15 @@ const NavHome = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className='me-auto liks-uno'>
-                        <Nav className='nav-link'>NOSOTROS</Nav>
-                        <Nav className='nav-link'>DEPARTAMENTOS</Nav>
+                        <Nav.Link className='nav-link' href="#NOSOTROS">NOSOTROS</Nav.Link>
+                        <Nav.Link  className='nav-link' href="#DEPARTAMENTOS">DEPARTAMENTOS</Nav.Link>
                     </Nav>
                     <Navbar.Brand className='d-none d-lg-block'>
                             <img src={logo2} alt="" className='logo'/>
                     </Navbar.Brand>
                     <Nav className='ms-auto '>
-                        <Nav.Link href="#link">SERVICIOS</Nav.Link>
-                        <Nav.Link href="#link">CONTACTO</Nav.Link>
+                        <Nav.Link href="#SERVICIOS">SERVICIOS</Nav.Link>
+                        <Nav.Link href="#CONTACTO">CONTACTO</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
