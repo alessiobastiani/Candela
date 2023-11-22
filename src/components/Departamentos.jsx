@@ -5,7 +5,6 @@ import casaTres from '../assets/casa3.jpeg'
 import amplias from '../assets/amplias.jpeg'
 import comodidad from '../assets/comodidad.jpeg'
 import baños from '../assets/baños.jpeg'
-import living from '../assets/living.jpeg'
 import cocinas from '../assets/cocinas.jpeg'
 import espacioso from '../assets/espacioso.jpeg'
 import interior from '../assets/interior.jpeg'
@@ -44,12 +43,6 @@ const callouts = [
     {
       name: 'Baños lindos',
       imageSrc: baños,
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
-
-    },
-    {
-      name: 'Living',
-      imageSrc: living,
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
 
     },
