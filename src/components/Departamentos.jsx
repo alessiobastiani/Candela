@@ -10,6 +10,8 @@ import espacioso from '../assets/espacioso.jpeg'
 import interior from '../assets/interior.jpeg'
 import equipado from '../assets/equipado.jpeg'
 import perfectos from '../assets/perfectos.jpeg'
+import sala from '../assets/sala.jpeg'
+
 
 
 const callouts = [
@@ -67,6 +69,12 @@ const callouts = [
     {
       name: 'Totalmente equipados',
       imageSrc: equipado,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
+    },
+    {
+      name: 'Limpios y ordenados',
+      imageSrc: sala,
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
 
     },
