@@ -80,7 +80,7 @@ const callouts = [
     {
       name: 'Perfectos para tus vacaciones',
       imageSrc: perfectos,
-      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+            imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
 
     }
   ]
