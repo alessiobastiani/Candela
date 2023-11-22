@@ -1,20 +1,17 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+
 import casaUno from '../assets/casa1.jpeg'
 import casaDos from '../assets/casa2.jpeg'
 import casaTres from '../assets/casa3.jpeg'
+import amplias from '../assets/amplias.jpeg'
+import comodidad from '../assets/comodidad.jpeg'
+import baños from '../assets/baños.jpeg'
+import living from '../assets/living.jpeg'
+import cocinas from '../assets/cocinas.jpeg'
+import espacioso from '../assets/espacioso.jpeg'
+import interior from '../assets/interior.jpeg'
+import equipado from '../assets/equipado.jpeg'
+import perfectos from '../assets/perfectos.jpeg'
+
 
 const callouts = [
     {
@@ -32,6 +29,42 @@ const callouts = [
       imageSrc: casaTres,
       imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
     },
+    {
+      name: 'Habitaciones amplias',
+      imageSrc: amplias,
+    },
+    {
+      name: 'Comodidad',
+      imageSrc: comodidad,
+    },
+    {
+      name: 'Baños lindos',
+      imageSrc: baños,
+    },
+    {
+      name: 'Living',
+      imageSrc: living,
+    },
+    {
+      name: 'Cocinas equipadas',
+      imageSrc: cocinas,
+    },
+    {
+      name: 'departamentos espaciosos',
+      imageSrc: espacioso,
+    },
+    {
+      name: 'interiores lindos',
+      imageSrc: interior,
+    },
+    {
+      name: 'Totalmente equipados',
+      imageSrc: equipado,
+    },
+    {
+      name: 'Perfectos para tus vacaciones',
+      imageSrc: perfectos,
+    }
   ]
   
   export default function Example() {
