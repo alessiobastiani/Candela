@@ -32,38 +32,56 @@ const callouts = [
     {
       name: 'Habitaciones amplias',
       imageSrc: amplias,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Comodidad',
       imageSrc: comodidad,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Baños lindos',
       imageSrc: baños,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Living',
       imageSrc: living,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Cocinas equipadas',
       imageSrc: cocinas,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'departamentos espaciosos',
       imageSrc: espacioso,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'interiores lindos',
       imageSrc: interior,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Totalmente equipados',
       imageSrc: equipado,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     },
     {
       name: 'Perfectos para tus vacaciones',
       imageSrc: perfectos,
+      imageAlt: 'Collection of four insulated travel bottles on wooden shelf.',
+
     }
   ]
   
