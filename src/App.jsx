@@ -9,12 +9,12 @@ import Contactanos from './components/Contactanos';
 import Footer from './components/Footer';
 import WhatsAppButton from "./components/WhasAppButton";
 import GoogleMapIframe from "./components/GoogleMapIframe";
-import Loader from './components/Loader'
-import ReactPlayer from 'react-player';
-
+import Loader from './components/Loader';
+import musicFile from './assets/musiquita.mp3';
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [musicMuted, setMusicMuted] = useState(true);
 
   useEffect(() => {
     // Simula una carga asincrónica
@@ -22,9 +22,29 @@ function App() {
       setTimeout(() => {
         setLoading(false);
       }, 4000); // Ajusta el tiempo según tus necesidades
+
+      // Inicia la reproducción de la música después de la carga inicial
+      setMusicMuted(false);
     };
 
     fakeAsyncLoad();
+  }, []);
+
+  useEffect(() => {
+    const handleUserInteraction = () => {
+      // Iniciar la reproducción de la música cuando el usuario interactúa
+      setMusicMuted(false);
+      // Eliminar el event listener después de la interacción para evitar múltiples reproducciones
+      document.removeEventListener('click', handleUserInteraction);
+    };
+
+    // Agregar un event listener para detectar la interacción del usuario
+    document.addEventListener('click', handleUserInteraction);
+
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+    };
   }, []);
 
   return (
@@ -33,22 +53,21 @@ function App() {
         <Loader />
       ) : (
         <>
-          <NavHome/>
-          <Home/>
-          <Nosotros/>
-          <Testimonio/>
-          <Departamentos/>
-          <GoogleMapIframe/>
-          <Servicios/>
-          <Contactanos/>
-          <Footer/>
-          <WhatsAppButton/>
-          <ReactPlayer
-            url="/src/assets/musiquita.mp3"
-            playing={true} // Iniciar la reproducción automáticamente
-            loop={true} // Reproducir de manera infinita
-            volume={0.5} // Ajusta el volumen según tus necesidades
-          />
+<audio className='audioWithBackground' controls autoPlay loop>
+  <source src={musicFile} type="audio/mp3" />
+</audio>
+
+          <NavHome />
+          <Home />
+
+          <Nosotros />
+          <Testimonio />
+          <Departamentos />
+          <GoogleMapIframe />
+          <Servicios />
+          <Contactanos />
+          <Footer />
+          <WhatsAppButton />
         </>
       )}
     </div>
