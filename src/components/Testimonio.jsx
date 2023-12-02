@@ -15,11 +15,6 @@ export default function Example() {
               </p>
             </blockquote>
             <figcaption className="mt-10">
-              <img
-                className="mx-auto h-10 w-10 rounded-full"
-                src={damian}
-                alt=""
-              />
               <div className="mt-4 flex items-center justify-center space-x-3 text-base">
                 <div className="font-semibold text-gray-900">Damian Llanos</div>
                 <svg viewBox="0 0 2 2" width={3} height={3} aria-hidden="true" className="fill-gray-900">

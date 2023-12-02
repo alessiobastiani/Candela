@@ -10,6 +10,8 @@ import Footer from './components/Footer';
 import WhatsAppButton from "./components/WhasAppButton";
 import GoogleMapIframe from "./components/GoogleMapIframe";
 import Loader from './components/Loader'
+import ReactPlayer from 'react-player';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +43,12 @@ function App() {
           <Contactanos/>
           <Footer/>
           <WhatsAppButton/>
+          <ReactPlayer
+            url="/src/assets/musiquita.mp3"
+            playing={true} // Iniciar la reproducción automáticamente
+            loop={true} // Reproducir de manera infinita
+            volume={0.5} // Ajusta el volumen según tus necesidades
+          />
         </>
       )}
     </div>
